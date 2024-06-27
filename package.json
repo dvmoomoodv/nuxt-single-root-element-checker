@@ -1,0 +1,13 @@
+{
+  "name": "root-component-check",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^8.1.0",
+    "glob-promise": "^6.0.7",
+    "grob": "^1.0.0",
+    "htmlparser2": "^9.1.0"
+  },
+  "type": "module"
+}
