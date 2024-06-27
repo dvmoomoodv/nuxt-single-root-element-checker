@@ -4,9 +4,13 @@ import { parseDocument } from "htmlparser2";
 const require = createRequire(import.meta.url);
 const glob = require("glob");
 
-// 검사할 디렉토리를 설정합니다.
-const directoryPath =
-  "/Users/dvmoomoodv/Project/company/gsitm/framework/ustra-framework3-node";
+// 검사대상 디렉토리
+const directoryPath = process.argv[2];
+
+if (!directoryPath) {
+  console.error("Please provide a directory path as an argument.");
+  process.exit(1);
+}
 
 // glob을 Promise로 래핑합니다.
 const globPromise = (pattern) =>
